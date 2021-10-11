@@ -5,7 +5,7 @@ ${version-number}
 
 #### New Features
 - **SCMOD-8516**: Extend the security hardening of Java base images by disabling TLS algorithms mentioned [here](https://github.com/CAFapi/opensuse-java8-images/blob/develop/src/main/docker/disableWeakTlsAlgorithms.patch)
-- **SCMOD-14832**: Updated Maven to version [3.8.2](https://maven.apache.org/docs/3.8.2/release-notes.html).
+- **SCMOD-15405**: Updated Maven to version [3.8.3](https://maven.apache.org/docs/3.8.3/release-notes.html).
 
 #### Known Issues
 - None
