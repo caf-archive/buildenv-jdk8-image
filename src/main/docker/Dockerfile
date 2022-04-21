@@ -20,7 +20,7 @@ ARG DOCKER_HUB_PUBLIC=docker.io
 #
 # Public maven image that contains the mvn-entrypoint.sh and settings-docker.xml files required
 #
-FROM ${DOCKER_HUB_PUBLIC}/library/maven:3.8.5-jdk-8 AS public_maven
+FROM ${DOCKER_HUB_PUBLIC}/library/maven:3.8.4-jdk-8 AS public_maven
 
 #
 # The actual image definition
@@ -41,7 +41,7 @@ RUN zypper -n refresh && \
          /usr/share/maven/ref/settings-docker.xml | sha512sum -c - && \
     mkdir -p /usr/share/maven /usr/share/maven/ref && \
     curl -fsSL -o /tmp/apache-maven.tar.gz https://apache.osuosl.org/maven/maven-3/3.8.5/binaries/apache-maven-3.8.5-bin.tar.gz && \
-    echo 89ab8ece99292476447ef6a6800d9842bbb60787b9b8a45c103aa61d2f205a971d8c3ddfb8b03e514455b4173602bd015e82958c0b3ddc1728a57126f773c743 \
+    echo a9b2d825eacf2e771ed5d6b0e01398589ac1bfa4171f36154d1b5787879605507802f699da6f7cfc80732a5282fd31b28e4cd6052338cbef0fa1358b48a5e3c8 \
          /tmp/apache-maven.tar.gz | sha512sum -c - && \
     tar -xzf /tmp/apache-maven.tar.gz -C /usr/share/maven --strip-components=1 && \
     rm -f /tmp/apache-maven.tar.gz && \
