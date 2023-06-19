@@ -1,3 +1,0 @@
-- dockerRepositoryId: cafapi/prereleases
-  imageName: buildenv-jdk8
-  tag: "2.2.3-199"
