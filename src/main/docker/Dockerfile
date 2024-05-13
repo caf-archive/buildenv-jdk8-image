@@ -25,7 +25,7 @@ FROM ${DOCKER_HUB_PUBLIC}/library/maven:3.9.3-eclipse-temurin-8 AS public_maven
 #
 # The actual image definition
 #
-FROM ${DOCKER_HUB_PUBLIC}/cafapi/opensuse-jdk8:3
+FROM ${DOCKER_HUB_PUBLIC}/cafapi/opensuse-jdk8:4
 
 # Copy the required files from public maven image
 COPY --from=public_maven /usr/local/bin/mvn-entrypoint.sh /usr/local/bin/
