@@ -71,8 +71,8 @@
                     <imageManagement>
                         <image>
                             <repository>${dockerHubPublic}/cafapi/opensuse-jdk8</repository>
-                            <tag>4.0.1</tag>
-                            <digest>sha256:da4e4c3128c1d68eb0a12228566ac4aee57f65d02eb46b4511ff4a291ab2222f</digest>
+                            <tag>4.1.0</tag>
+                            <digest>sha256:e72be9bb646e05b6be1ae2a21abe08326cc9c683ef8c512da9c9a27fefb26a10</digest>
                         </image>
                         <image>
                             <repository>${dockerHubPublic}/library/maven</repository>
