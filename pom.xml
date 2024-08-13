@@ -28,7 +28,7 @@
     </parent>
 
     <artifactId>buildenv-jdk8-image</artifactId>
-    <version>2.7.1-SNAPSHOT</version>
+    <version>2.7.1-335</version>
     <packaging>pom</packaging>
 
     <name>openSUSE JDK8 Maven image</name>
